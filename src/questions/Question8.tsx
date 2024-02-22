@@ -1,27 +1,20 @@
-import { Box, Grid, GridItem, HStack, NumberInput, NumberInputField, Text, VStack } from "@chakra-ui/react";
-import QuestionText from "../components/QuestionText";
+import { Box, NumberInput, NumberInputField, Text } from "@chakra-ui/react";
 import QuestionOutput from "../components/QuestionOutput";
+import QuestionText from "../components/QuestionText";
 
-export default function Question1() {
+export default function Question8() {
     return (
         <Box>
             <QuestionText>
                 <Text fontSize="2xl">
-                    In a calendar year, what is the minimum and maximum Friday the 13ths that can occur?
+                    The ArchWizard became extremely bored one day and created a machine that contains two chambers of which he cannot peer into. In addition there are two buttons: “create” and “extract”. “create” magically constructs a [some item] in one of the two chambers at random, and “extract” empties out one of the chambers into a nearby storage container at random. Since the ArchWizard is extremely smart, he will always play optimally. What is the expected amount of [items] that will be thrown in the storage container after 100 button presses?
                 </Text>
             </QuestionText>
 
             <QuestionOutput>
-                <VStack>
-                    <HStack> 
-                        <Text fontSize="lg"> Min: </Text>
-                        <NumberInput> <NumberInputField /> </NumberInput>
-                    </HStack>                    
-                    <HStack> 
-                        <Text fontSize="lg"> Max: </Text>
-                        <NumberInput> <NumberInputField /> </NumberInput>
-                    </HStack>                    
-                </VStack>
+                <NumberInput>
+                    <NumberInputField />
+                </NumberInput>
             </QuestionOutput>
         </Box>
     )

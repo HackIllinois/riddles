@@ -4,6 +4,7 @@ import Config from "../config";
 import { useEffect, useState } from "react";
 import axios, { AxiosError } from "axios";
 
+import Question0 from "../questions/Question0";
 import Question1 from "../questions/Question1";
 import Question2 from "../questions/Question2";
 import Question3 from "../questions/Question3";
@@ -12,7 +13,6 @@ import Question5 from "../questions/Question5";
 import Question6 from "../questions/Question6";
 import Question7 from "../questions/Question7";
 import Question8 from "../questions/Question8";
-import Question9 from "../questions/Question9";
 import { Navigate } from "react-router-dom";
 import ModalWrapper from "../components/TeamNameModal";
 
@@ -20,13 +20,18 @@ interface TabPanelProps {
     children: React.ReactNode;
 }
 
-interface PuzzleData {
+export interface QuestionProps {
+    setData: (value: React.SetStateAction<PuzzleData>) => void;
+}
+
+export interface PuzzleData {
     userId: string;
     lastCorrect: number;
     problemComplete: boolean[];
     teamName: string;
     score: number;
 }
+
 
 function createTab(idx: number, complete: boolean) {
     const src = complete ? "complete.svg" : `q${idx}.svg`;
@@ -38,7 +43,7 @@ function Panel({children}: TabPanelProps) {
     return <TabPanel alignContent="center" w="100%" minH="50vh"> {children} </TabPanel>;
 }
 
-const problems = Array.from({ length: Config.NUM_QUESTIONS }, (_, index) => index + 1);
+const problems = Array.from({ length: Config.NUM_QUESTIONS }, (_, index) => index);
 
 export default function Questions() {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -54,11 +59,9 @@ export default function Questions() {
 
         axios.get(apiUrl, {headers: {Authorization: jwt}})
             .then(response => {
-                console.log(response.data);
                 setData({...response.data});
 
                 // TODO: ADD A MODAL HERE
-                console.log(data.score);
                 if (data.score == 9) {
                     alert("You have finished!")
                 }
@@ -86,6 +89,7 @@ export default function Questions() {
                 </TabList>
 
                 <TabPanels>
+                    <Panel> <Question0 setData={setData} /> </Panel>
                     <Panel> <Question1 /> </Panel>
                     <Panel> <Question2 /> </Panel>
                     <Panel> <Question3 /> </Panel>
@@ -94,7 +98,6 @@ export default function Questions() {
                     <Panel> <Question6 /> </Panel>
                     <Panel> <Question7 /> </Panel>
                     <Panel> <Question8 /> </Panel>
-                    <Panel> <Question9 /> </Panel>
                 </TabPanels>
             </Tabs>
         </PageContents>
