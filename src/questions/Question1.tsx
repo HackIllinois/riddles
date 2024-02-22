@@ -2,9 +2,9 @@ import { Box, Text, Input } from "@chakra-ui/react";
 import QuestionText from "../components/QuestionText";
 import QuestionOutput from "../components/QuestionOutput";
 import { useState } from "react";
-import InputWrapper from "../components/InputWrapper";
+import InputForm from "../components/InputForm";
 
-function handleSubmission (answers: Map<string, string>): string {
+function getSubmission (answers: Map<string, string>): string {
     return answers.get("q1") ?? "NONE";
 }
 
@@ -22,10 +22,10 @@ export default function Question1() {
                 <Text fontSize="4xl"> What is HackIllinois 2024's theme? </Text>
             </QuestionText>
 
-            <QuestionOutput qid="q1" answers={answers} getSubmission={handleSubmission}>
-                <InputWrapper handleAnswerChange={handleAnswerChange}>
-                    <Input id ="q1" placeholder='Enter your answer here!' size='lg' _placeholder={{ color: "white" }} onChange={(event) => handleAnswerChange("q1", event.currentTarget.value)}/>
-                </InputWrapper>
+            <QuestionOutput qid="q1" answers={answers} getSubmission={getSubmission}>
+                <InputForm handleAnswerChange={handleAnswerChange}>
+                    <Input id ="q1" placeholder='Enter your answer here!' size='lg' _placeholder={{ color: "white" }} />
+                </InputForm>
             </QuestionOutput>
         </Box>
     )

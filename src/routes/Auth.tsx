@@ -10,7 +10,6 @@ export default function Auth() {
 
     // jwt found in local storage
     if (jwt) {
-        window.location.href = POST_AUTH_URL;
         return <Navigate to={POST_AUTH_URL} />;
     }
 
