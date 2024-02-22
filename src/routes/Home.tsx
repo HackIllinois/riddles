@@ -12,7 +12,7 @@ export default function Home() {
                         <Heading> Welcome to Runes and Riddles! </Heading>
                     </Box>
                     <Box w='400px' h='40px' marginBlock="100px">
-                        <Button w="100%"> Begin! </Button>
+                        <Button w="100%" onClick={() => window.location.href="/auth/"}> Begin! </Button>
                     </Box>
                 </VStack>
             </Box>
