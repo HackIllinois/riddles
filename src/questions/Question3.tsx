@@ -1,32 +1,9 @@
-import QuestionText from "../components/QuestionText";
-import QuestionOutput from "../components/QuestionOutput";
-import { Box, Select, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import { useState } from "react";
+import CustomSelect from "../components/CustomSelect";
+import QuestionOutput from "../components/QuestionOutput";
+import QuestionText from "../components/QuestionText";
 import Config from "../config";
-
-interface CustomSelectProps {
-    value: string;
-    onChange: (value: string) => void;
-    options: string[];
-    disabledValues: string[];
-}
-
-const CustomSelect = ({ value, onChange, options, disabledValues }: CustomSelectProps) => {
-    const filteredOptions = options.filter(option => !disabledValues.includes(option));
-
-    return (
-        <Select value={value} onChange={(e) => onChange(e.target.value)}>
-            {filteredOptions.map((option, index) => (
-                <option
-                    key={index}
-                    value={option}
-                >
-                    {disabledValues.includes(option) ? null : option}
-                </option>
-            )).filter((option) => option)}
-        </Select>
-    );
-};
 
 
 export default function Question1() {
