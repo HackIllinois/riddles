@@ -25,15 +25,13 @@ function Panel({children}: TabPanelProps) {
     return <TabPanel alignContent="center" w="100%" minH="50vh"> {children} </TabPanel>;
 }
 
-
 const problems = Array.from({ length: Config.NUM_QUESTIONS }, (_, index) => index + 1);
-
 
 export default function Questions() {
     return (
         <PageContents>
             <Tabs isFitted variant='soft-rounded' colorScheme='green'>
-                <TabList marginBottom="10%">
+                <TabList marginBottom="2%">
                     {problems.map(createTab)}
                 </TabList>
 
