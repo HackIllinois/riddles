@@ -10,8 +10,10 @@ export default function PageContents({children, bg}: PageContentsProps) {
     const [tooSmall] = useMediaQuery("(max-width: 800px)")
     
     return tooSmall ? <PageTooSmall/> : (
-        <Box bg={bg ?? "white"} h="100vh">
-            {children}
+        <Box bg={bg ?? "white"} h="100%" padding="2.5%">
+            <Box>
+                {children}
+            </Box>
         </Box>
     )
 }
