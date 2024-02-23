@@ -1,5 +1,5 @@
 import { Navigate, useSearchParams } from "react-router-dom";
-import Config from "../config";
+import { Config } from "../config";
 
 const POST_AUTH_URL = "/questions/"
 

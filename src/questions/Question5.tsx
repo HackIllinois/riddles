@@ -26,7 +26,7 @@ export default function Question5({data, setData}: QuestionProps) {
 
             <QuestionOutput qid="5" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <Input id ="0" placeholder='Enter your answer here!' size='lg' _placeholder={{ color: "white" }} />
+                    <Input id ="0" placeholder="Answer here..." size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>

@@ -4,6 +4,7 @@ import QuestionOutput from "../components/QuestionOutput";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
 import { QuestionProps } from "../routes/Questions";
+import { Colors } from "../config";
 
 function getSubmission (answers: Map<string, string>): string {
     return answers.get("0") ?? "NONE";
@@ -20,12 +21,12 @@ export default function Question0( {setData, data}: QuestionProps ) {
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="4xl"> What is HackIllinois 2024's theme? </Text>
+                <Text fontSize="4xl" color={Colors.primaryTextColor}> What is HackIllinois 2024's theme? </Text>
             </QuestionText>
 
             <QuestionOutput qid="0" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <Input id ="0" placeholder='Enter your answer here!' size='lg' _placeholder={{ color: "white" }} />
+                    <Input id ="0" placeholder='Answer here...' size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>

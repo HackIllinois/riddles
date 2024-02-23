@@ -3,7 +3,7 @@ import { useState } from "react";
 import CustomSelect from "../components/CustomSelect";
 import QuestionOutput from "../components/QuestionOutput";
 import QuestionText from "../components/QuestionText";
-import Config from "../config";
+import { Config } from "../config";
 import { QuestionProps } from "../routes/Questions";
 
 function getSubmission(answers: Map<string, string>): string {

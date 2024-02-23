@@ -1,7 +1,7 @@
 import { Button, FormControl, ModalOverlay, ModalContent, Text, Modal, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Input } from "@chakra-ui/react"
 import axios from "axios";
 import { ChangeEvent, useState } from "react";
-import Config from "../config";
+import { Config } from "../config";
 
 interface TeamNameModalProps {
   isOpen: boolean,

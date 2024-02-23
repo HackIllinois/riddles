@@ -1,6 +1,7 @@
 import { Box, Button, Heading } from "@chakra-ui/react";
 import PageContents from "../components/PageContents";
 import { VStack } from "@chakra-ui/react";
+import { Colors } from "../config";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
             <Box>
                 <VStack marginTop="100px">
                     <Box w="75vw" h='40px' marginBlock="100px" textAlign="center">
-                        <Heading> Welcome to Runes and Riddles! </Heading>
+                        <Heading color={Colors.primaryTextColor}> Welcome to Runes and Riddles! </Heading>
                     </Box>
                     <Box w='400px' h='40px' marginBlock="100px">
                         <Button w="100%" onClick={() => window.location.href="/auth/"}> Begin! </Button>

@@ -1,8 +1,9 @@
 import PageContents from "../components/PageContents";
 import { Image, Tab, TabList, TabPanel, TabPanels, Tabs, useDisclosure } from "@chakra-ui/react";
-import Config from "../config";
 import { useEffect, useState } from "react";
 import axios, { AxiosError } from "axios";
+import { Config } from "../config";
+import "@fontsource/montserrat";
 
 import Question0 from "../questions/Question0";
 import Question1 from "../questions/Question1";
@@ -84,12 +85,12 @@ export default function Questions() {
     return (
         <PageContents>
             <ModalWrapper isOpen={isOpen} onClose={onClose}/> 
-            <Tabs isFitted variant='soft-rounded' colorScheme='green'>
+            <Tabs isFitted variant='soft-rounded'>
                 <TabList marginBottom="2%">
                     {problems.map(idx => createTab(idx, data?.problemComplete?.[idx] || false))}
                 </TabList>
 
-                <TabPanels>
+                <TabPanels fontFamily={"Montserrat"} fontWeight={600}>
                     <Panel> <Question0 data={data} setData={setData} /> </Panel>
                     <Panel> <Question1 data={data} setData={setData}/> </Panel>
                     <Panel> <Question2 data={data} setData={setData}/> </Panel>

@@ -1,7 +1,7 @@
 import { Box, VStack, Image, useToast } from "@chakra-ui/react";
 import axios from "axios";
 import { useState } from "react";
-import Config from "../config";
+import { Config } from "../config";
 import { PuzzleData } from "../routes/Questions";
 interface QuestionOutputProps {
     qid: string,
@@ -23,7 +23,7 @@ export default function QuestionOutput({ qid, answers, children, getSubmission, 
         console.log(apiUrl);
 
         const submissionPromise = axios.post(apiUrl,
-            { answer: submission },
+            { answer: submission.toLowerCase() },
             {
                 headers: {
                     "Authorization": jwt,
