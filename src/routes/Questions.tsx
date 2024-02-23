@@ -22,6 +22,7 @@ interface TabPanelProps {
 
 export interface QuestionProps {
     setData: (value: React.SetStateAction<PuzzleData>) => void;
+    data: PuzzleData;
 }
 
 export interface PuzzleData {
@@ -78,7 +79,7 @@ export default function Questions() {
 
                 }
             });
-        }, []); // The empty dependency array ensures the effect runs only once on component mount
+        }, []);
     
     return (
         <PageContents>
@@ -89,15 +90,15 @@ export default function Questions() {
                 </TabList>
 
                 <TabPanels>
-                    <Panel> <Question0 setData={setData} /> </Panel>
-                    <Panel> <Question1 /> </Panel>
-                    <Panel> <Question2 /> </Panel>
-                    <Panel> <Question3 /> </Panel>
-                    <Panel> <Question4 /> </Panel>
-                    <Panel> <Question5 /> </Panel>
-                    <Panel> <Question6 /> </Panel>
-                    <Panel> <Question7 /> </Panel>
-                    <Panel> <Question8 /> </Panel>
+                    <Panel> <Question0 data={data} setData={setData} /> </Panel>
+                    <Panel> <Question1 data={data} setData={setData}/> </Panel>
+                    <Panel> <Question2 data={data} setData={setData}/> </Panel>
+                    <Panel> <Question3 data={data} setData={setData}/> </Panel>
+                    <Panel> <Question4 data={data} setData={setData} /> </Panel>
+                    <Panel> <Question5 data={data} setData={setData} /> </Panel>
+                    <Panel> <Question6 data={data} setData={setData} /> </Panel>
+                    <Panel> <Question7 data={data} setData={setData}/> </Panel>
+                    <Panel> <Question8 data={data} setData={setData}/> </Panel>
                 </TabPanels>
             </Tabs>
         </PageContents>
