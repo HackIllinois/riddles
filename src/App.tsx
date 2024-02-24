@@ -1,5 +1,5 @@
 import { ChakraProvider, theme } from "@chakra-ui/react"
-import { BrowserRouter, HashRouter, Navigate, Route, Routes } from "react-router-dom"
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom"
 
 import Auth from "./routes/Auth"
 import Home from "./routes/Home"
