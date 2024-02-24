@@ -21,7 +21,7 @@ export default function Auth() {
         return <Navigate to={POST_AUTH_URL} />;
     } else {
         console.log("Redirecting to adonix login...");
-        window.location.href = Config.API_BASE_URL + "/#/auth/login/github/?device=puzzle";
+        window.location.href = Config.API_BASE_URL + "/auth/login/github/?device=puzzle";
         return null;
     }
 }
