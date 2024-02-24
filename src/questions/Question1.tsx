@@ -26,9 +26,9 @@ interface LetterProps {
 function Letter ({state, char}: LetterProps) {
     let bg;
     switch (state) {
-        case State.GRAY: bg = Colors.WordleGray; break;
-        case State.GREEN: bg = Colors.WordleGreen; break;
-        case State.YELLOW: bg = Colors.WordleYellow; break;
+        case State.GRAY: bg = Colors.wordleGray; break;
+        case State.GREEN: bg = Colors.wordleGreen; break;
+        case State.YELLOW: bg = Colors.wordleYellow; break;
     }
     return <GridItem w="50px" h="50px" margin="2px" fontSize={"4xl"} fontWeight={"750"} color={Colors.primaryTextColor} bg={bg}> {char} </GridItem>;
 }

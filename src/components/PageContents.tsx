@@ -7,14 +7,14 @@ interface PageContentsProps {
     bg?: string;
 }
 
-export default function PageContents({children, bg}: PageContentsProps) {
-    const [tooSmall] = useMediaQuery("(max-width: 800px)")
-    
-    return tooSmall ? <PageTooSmall/> : (
-        <Box bg={bg ?? Colors.background} h="100vh" padding="2.5%" color={Colors.primaryTextColor} position={"fixed"} width={"100vw"}>
+export default function PageContents({ children, bg }: PageContentsProps) {
+    const [tooSmall] = useMediaQuery("(max-width: 600px)")
+
+    return <Box bg={bg ?? Colors.background} h="100vh" padding="2.5%" color={Colors.primaryTextColor} position={"fixed"} width={"100vw"}>
+        {tooSmall ? <PageTooSmall /> : (
             <Box>
                 {children}
             </Box>
-        </Box>
-    )
+        )}
+    </Box>
 }

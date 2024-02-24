@@ -1,9 +1,9 @@
 import { Box, NumberInput, NumberInputField, Text } from "@chakra-ui/react";
 import QuestionOutput from "../components/QuestionOutput";
-import QuestionText from "../components/QuestionText";
 import { QuestionProps } from "../routes/Questions";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
+import QuestionText from "../components/QuestionText";
 
 function getSubmission(answers: Map<string, string>): string {
     return answers.get("ans") ?? "NONE";

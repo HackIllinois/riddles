@@ -7,6 +7,8 @@ const rootElement = document.getElementById('root')
 
 if (!rootElement) {throw new Error();}
 
+document.title = 'Runes and Riddles';
+
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <ChakraProvider>

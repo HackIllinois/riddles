@@ -4,9 +4,10 @@ import QuestionOutput from "../components/QuestionOutput";
 import { QuestionProps } from "../routes/Questions";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
+import { Colors } from "../config";
 
 function getSubmission(answers: Map<string, string>): string {
-    return answers.get("0") ?? "NONE";
+    return answers.get("0")?.toLowerCase() ?? "NONE";
 }
 
 export default function Question3({ setData, data }: QuestionProps) {
@@ -20,7 +21,7 @@ export default function Question3({ setData, data }: QuestionProps) {
     return (
         <Box>
             <QuestionText >
-                <Code textAlign={"left"} fontSize="xl">
+                <Code textAlign={"left"} fontSize="xl" bg={Colors.codeBackground}>
                  15 {"=>"} 🔮 <br /> <br /> 
                 if 🔮 mod 3 <br /> 
                 <Text ml="20px"> cout {"<< hack"} <br />  </Text>

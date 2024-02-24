@@ -9,7 +9,6 @@ function getSubmission(answers: Map<string, string>): string {
     const min = answers.get("min") ?? -1;
     const max = answers.get("max") ?? -1;
     const rv = `min:${min},max:${max}`;
-    console.log(rv);
     return rv;
 }
 

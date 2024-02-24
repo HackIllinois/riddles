@@ -56,28 +56,30 @@ export default function Questions() {
         return <Navigate to="/auth/" />
     }
 
+    // FINISHED PUZZLE
+    if (data && data.score == 9) {
+        // alert("You are finished!");
+        window.location.href = "/";
+    }
+
+
     useEffect(() => {
         const apiUrl = `${Config.API_BASE_URL}/puzzle/status/`;
 
         axios.get(apiUrl, {headers: {Authorization: jwt}})
             .then(response => {
                 setData({...response.data});
-
-                // TODO: ADD A MODAL HERE
-                if (data.score == 9) {
-                    alert("You have finished!")
-                }
             })
             .catch((error: AxiosError) => {
                 const response = error.response;
                 if (response?.status == 404) {
                     onOpen();                    
+                } if (response?.status == 401 || response?.status == 403) {
+                    localStorage.removeItem("jwt");
+                    window.location.href="/auth/"
                 } else {
                     console.log(response);
-                    alert("Something went wrong! Please reach out to our staff...")
-                    window.location.href = "/"
                     return null;
-
                 }
             });
         }, []);

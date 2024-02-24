@@ -6,7 +6,7 @@ interface QuestionTextProps {
 
 export default function QuestionText({children}: QuestionTextProps) {
     return (
-        <Box margin="5%">
+        <Box>
             <Box margin="auto" textAlign="center">
                 {children}
             </Box>

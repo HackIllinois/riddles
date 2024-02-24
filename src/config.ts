@@ -10,7 +10,8 @@ export const Colors = {
     background: "#0d3f41",
     primaryTextColor: "#ffffff",
     selectColor: "#ebd2d2",
-    WordleGray: "#4A5568",
-    WordleGreen: "#76b32b",
-    WordleYellow: "#ffc23e"
+    wordleGray: "#4A5568",
+    wordleGreen: "#76b32b",
+    wordleYellow: "#ffc23e",
+    codeBackground: "#A0AEC0"
 }
