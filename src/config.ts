@@ -1,5 +1,5 @@
 export const Config = {
-    API_BASE_URL: "https://adonix.hackillinois.org/",
+    API_BASE_URL: "https://adonix.hackillinois.org",
     NUM_QUESTIONS: 9,
     CONNECTIONS_OPTIONS: [" ", "Blockchain", "Carnival", "Fantasy", "Hardware", "Mining", "Packet", "Router", "Server", "Terminal", ],
 }
