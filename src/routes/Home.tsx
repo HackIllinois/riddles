@@ -37,7 +37,7 @@ export default function Home() {
                     </Box>
                     <Box w='400px' h='40px' marginBlock="100px">
                         <Box marginTop="6.5%" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                            <Image src={`/public/begin_${hovered ? "unhover" : "hover"}.svg`} onClick={() => {
+                            <Image src={`/begin_${hovered ? "unhover" : "hover"}.svg`} onClick={() => {
                                 window.location.href = "/auth/"
                             }} />
                         </Box>

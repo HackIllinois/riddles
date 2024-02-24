@@ -54,7 +54,7 @@ export default function QuestionOutput({ qid, answers, children, getSubmission, 
             <VStack>
                 {children}
                 <Box marginTop="6.5%" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                    <Image src={`/public/submit_${hovered ? "hover" : "unhover"}.svg`} onClick={() => {
+                    <Image src={`/submit_${hovered ? "hover" : "unhover"}.svg`} onClick={() => {
                         const submission = getSubmission(answers);
                         handleSubmission(qid, submission);
                     }} />

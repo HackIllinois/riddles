@@ -37,7 +37,7 @@ export default function Question6({data, setData}: QuestionProps) {
                 </InputForm>
             </QuestionOutput>
         </Box>
-        <Image src="/public/q6_k.svg" style={{objectFit: "cover", alignSelf: "baseline", width: "35vw"}} />
+        <Image src="/q6_k.svg" style={{objectFit: "cover", alignSelf: "baseline", width: "35vw"}} />
     </HStack>
     )
 };
