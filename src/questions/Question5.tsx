@@ -49,7 +49,7 @@ export default function Question5({ data, setData }: QuestionProps) {
                     </InputForm>
                 </QuestionOutput>
             </Box>
-            <Image src="/assets/q5_q.svg" boxSize='35vw' />
+            <Image src="/public/q5_q.svg" boxSize='35vw' />
         </HStack>
     )
 };

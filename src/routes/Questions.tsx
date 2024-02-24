@@ -37,7 +37,7 @@ export interface PuzzleData {
 
 function createTab(idx: number, complete: boolean) {
     const src = complete ? "complete.svg" : `q${idx}.svg`;
-    return <Tab> <Image draggable="false" minH={"100%"} src={`/assets/${src}`} /> </Tab>;
+    return <Tab> <Image draggable="false" minH={"100%"} src={`/public/${src}`} /> </Tab>;
 }
 
 
