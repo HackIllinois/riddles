@@ -53,7 +53,7 @@ export default function Questions() {
     const jwt = localStorage.getItem("jwt");
 
     if (!jwt) {
-        return <Navigate to="/auth/" />
+        return <Navigate to="/#/auth/" />
     }
 
     // FINISHED PUZZLE
@@ -76,7 +76,7 @@ export default function Questions() {
                     onOpen();                    
                 } if (response?.status == 401 || response?.status == 403) {
                     localStorage.removeItem("jwt");
-                    window.location.href="/auth/"
+                    window.location.href="/#/auth/"
                 } else {
                     console.log(response);
                     return null;
