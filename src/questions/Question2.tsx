@@ -1,4 +1,4 @@
-import { Box, HStack, SimpleGrid, Text } from "@chakra-ui/react";
+import { HStack, SimpleGrid, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import CustomSelect from "../components/CustomSelect";
 import QuestionOutput from "../components/QuestionOutput";

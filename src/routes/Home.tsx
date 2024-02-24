@@ -1,7 +1,6 @@
-import { Box, Button, Text, Heading, Image } from "@chakra-ui/react";
+import { Box, Heading, Image } from "@chakra-ui/react";
 import PageContents from "../components/PageContents";
 import { VStack } from "@chakra-ui/react";
-import { Colors } from "../config";
 import { useState } from "react";
 import "@fontsource/medievalsharp";
 

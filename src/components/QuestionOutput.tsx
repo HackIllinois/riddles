@@ -3,7 +3,6 @@ import axios from "axios";
 import { useState } from "react";
 import { Config } from "../config";
 import { PuzzleData } from "../routes/Questions";
-import { Navigate } from "react-router-dom";
 interface QuestionOutputProps {
     qid: string,
     answers: Map<string, string>,
