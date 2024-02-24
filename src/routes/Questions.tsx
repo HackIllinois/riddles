@@ -59,7 +59,7 @@ export default function Questions() {
     // FINISHED PUZZLE
     if (data && data.score == 9) {
         // alert("You are finished!");
-        window.location.href = "/";
+        window.location.href = "/#/";
     }
 
 

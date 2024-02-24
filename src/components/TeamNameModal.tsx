@@ -14,7 +14,7 @@ export default function TeamNameModal({ isOpen, onClose }: TeamNameModalProps) {
   const jwt = localStorage.getItem("jwt");
 
   if (!jwt) {
-    window.location.href = "/auth/";
+    window.location.href = "/#/auth/";
     return null;
   }
 
@@ -72,7 +72,7 @@ export default function TeamNameModal({ isOpen, onClose }: TeamNameModalProps) {
               isLoading={isSubmitting}>
               Create team!
             </Button>
-            <Button variant='ghost' onClick={() => window.location.href = "/"}>EXIT</Button>
+            <Button variant='ghost' onClick={() => window.location.href = "/#/"}>EXIT</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
