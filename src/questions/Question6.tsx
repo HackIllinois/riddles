@@ -23,11 +23,9 @@ export default function Question6({data, setData}: QuestionProps) {
         <Box padding={"50px"}>
             <QuestionText>
                 <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
-                    As you step into this enchanted chessboard, you find yourself facing a puzzle that demands the utmost cunning and foresight.
+                    Confronted with two enchanting chessboards, each adorned with 6 gallant knights, you are tasked with a challenge. 
                     {<br />} {<br />}
-                    Before you stands a chessboard adorned with 5 powerful Queens, each guarding their territory with regal authority. Your quest is to add 3 more Queens to the board, placing them strategically to maintain harmony among the royal guardians.
-                    {<br />} {<br />}
-                    Determine the locations of these 3 new Queens and submit their positions in (increasing) alphanumeric order.
+                    Calculate the minimum number of moves required to transform the initial configuration on the left-side chessboard into the final arrangement on the right-side.
                 </Text>
             </QuestionText>
 
