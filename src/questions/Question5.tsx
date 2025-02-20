@@ -29,11 +29,11 @@ export default function Question5({ data, setData }: QuestionProps) {
             <Box padding="20px">
                 <QuestionText>
                     <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
-                        As you step into this enchanted chessboard, you find yourself facing a puzzle that demands the utmost cunning and foresight.
+                        In the grand halls of the ancient Greek scribes, a sacred text was inscribed—a sea of 'm's stretching endlessly.
                         {<br />} {<br />}
-                        Before you stands a chessboard adorned with 5 powerful Queens, each guarding their territory with regal authority. Your quest is to add 3 more Queens to the board, placing them strategically to maintain harmony among the royal guardians.
+                        Yet, hidden within, a single 'n' holds the key to wisdom. Can you uncover its location?
                         {<br />} {<br />}
-                        Determine the locations of these 3 new Queens and submit their positions in (increasing) alphanumeric order.
+                        You can do it manually or write code to solve this.
                     </Text>
                 </QuestionText>
 
