@@ -21,11 +21,17 @@ export default function Question0( {setData, data}: QuestionProps ) {
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
-                    Six travelers—Hermes (1 min), Perseus (3 min), Athena (8 min), Heracles (12 min), Zeus (15 min), and Atlas (20 min)—must cross a crumbling bridge with a shared torch.
+                <Text fontSize="2xl" alignSelf={"baseline"} textAlign={"left"} ml={40}>
+                    Six travelers— Hermes (1 min), Perseus (3 min), Athena (8 min), Heracles (12 min), Zeus (15 min),
                     {<br />}
-                    What is the earliest time the last person/pair can cross?
+                    and Atlas (20 min) —must cross a crumbling bridge with a shared torch.
                     {<br />} {<br />}
+                </Text>
+                <Text fontSize="2xl">
+                    What is the earliest time the last person/pair can cross?
+                    {<br />}
+                </Text>
+                <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"} ml={40}>
                     Rules:
                     {<br />}
                     - Pairs cross at the slower traveler's speed.
