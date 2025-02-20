@@ -1,46 +1,36 @@
-import { Box, HStack, NumberInput, NumberInputField, Text, VStack } from "@chakra-ui/react";
+import { Box, Text, Input } from "@chakra-ui/react";
 import QuestionText from "../components/QuestionText";
 import QuestionOutput from "../components/QuestionOutput";
-import { QuestionProps } from "../routes/Questions";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
+import { QuestionProps } from "../routes/Questions";
+import { Colors } from "../config";
 
-function getSubmission(answers: Map<string, string>): string {
-    const min = answers.get("min") ?? -1;
-    const max = answers.get("max") ?? -1;
-    const rv = `min:${min},max:${max}`;
-    return rv;
+function getSubmission (answers: Map<string, string>): string {
+    return answers.get("0") ?? "NONE";
 }
 
-export default function Question7({ data, setData }: QuestionProps) {
+export default function Question0( {setData, data}: QuestionProps ) {
     const [answers, setAnswers] = useState(new Map<string, string>());
 
     // Function to handle input value changes
     const handleAnswerChange = (id: string, value: string) => {
-        console.log(id, value)
         setAnswers(answers.set(id, value));
     };
-
+    
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="2xl">
-                    In a calendar year, what is the minimum and maximum Friday the 13ths that can occur?
+                <Text fontSize="2xl" color={Colors.primaryTextColor}> 
+                The Oracle of Delphi has revealed a sacred sequence, whispered by the gods. To unlock the next great prophecy, you must determine the 2025th number in the pattern.
+                {<br />} {<br />}
+                91, 43, 79, 31, 93, 49, 71, 33, …
                 </Text>
             </QuestionText>
 
             <QuestionOutput qid="7" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <VStack>
-                        <HStack>
-                            <Text fontSize="lg"> Min: </Text>
-                            <NumberInput> <NumberInputField id="min"/> </NumberInput>
-                        </HStack>
-                        <HStack>
-                            <Text fontSize="lg"> Max: </Text>
-                            <NumberInput> <NumberInputField id="max"/> </NumberInput>
-                        </HStack>
-                    </VStack>
+                    <Input id ="0" placeholder='Answer here...' size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>

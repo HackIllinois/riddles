@@ -1,36 +1,45 @@
-import { Box, NumberInput, NumberInputField, Text } from "@chakra-ui/react";
+import { Box, Text, Input } from "@chakra-ui/react";
+import QuestionText from "../components/QuestionText";
 import QuestionOutput from "../components/QuestionOutput";
-import { QuestionProps } from "../routes/Questions";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
-import QuestionText from "../components/QuestionText";
+import { QuestionProps } from "../routes/Questions";
+import { Colors } from "../config";
 
-function getSubmission(answers: Map<string, string>): string {
-    return answers.get("ans") ?? "NONE";
+function getSubmission (answers: Map<string, string>): string {
+    return answers.get("0") ?? "NONE";
 }
 
-export default function Question8({ data, setData }: QuestionProps) {
+export default function Question0( {setData, data}: QuestionProps ) {
     const [answers, setAnswers] = useState(new Map<string, string>());
 
     // Function to handle input value changes
     const handleAnswerChange = (id: string, value: string) => {
         setAnswers(answers.set(id, value));
     };
-
+    
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="2xl">
-                    The ArchWizard became extremely bored one day and created a machine that contains two chambers of which he cannot peer into. In addition there are two buttons: “create” and “extract”. “create” magically constructs a artifact in one of the two chambers at random, and “extract” empties out one of the chambers into a nearby storage container at random. Since the ArchWizard is extremely smart, he will always play optimally. What is the expected amount of artifacts that will be thrown in the storage container after 100 button presses?
+                <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
+                    Six travelers—Hermes (1 min), Perseus (3 min), Athena (8 min), Heracles (12 min), Zeus (15 min), and Atlas (20 min)—must cross a crumbling bridge with a shared torch.
+                    {<br />}
+                    What is the earliest time the last person/pair can cross?
+                    {<br />} {<br />}
+                    Rules:
+                    {<br />}
+                    - Pairs cross at the slower traveler's speed.
+                    {<br />}
+                    - Every 15 minutes, Hera's whispers weaken the flame, increasing all remaining crossing times by 1.5x.
+                    {<br />}
+                    - Someone must return with the torch if others remain.
                 </Text>
             </QuestionText>
 
             <QuestionOutput qid="8" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
-                <NumberInput>
-                    <InputForm handleAnswerChange={handleAnswerChange}>
-                        <NumberInputField id="ans" />
-                    </InputForm>
-                </NumberInput>
+                <InputForm handleAnswerChange={handleAnswerChange} >
+                    <Input id ="0" placeholder='Answer here...' size='lg' _placeholder={{ color: "white" }} />
+                </InputForm>
             </QuestionOutput>
         </Box>
     )

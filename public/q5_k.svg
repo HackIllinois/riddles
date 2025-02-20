@@ -1,0 +1,51 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- First Board -->
+  <g transform="translate(50, 50)">
+    <!-- Board squares -->
+    <rect width="200" height="200" fill="#1a365d"/>
+    <g id="squares1">
+      <rect x="0" y="0" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="133.3" y="0" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="66.7" y="66.7" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="0" y="133.3" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="133.3" y="133.3" width="66.7" height="66.7" fill="#7fb7d1"/>
+    </g>
+    
+    <!-- Knights -->
+    <!-- White knight in bottom left -->
+    <path d="M25 25 l2.5 7.5 h5 l2.5 -7.5 l2.5 2.5 v5 l-2.5 2.5 l5 5 l-2.5 5 l-7.5 -2.5 l-7.5 2.5 l-2.5 -5 l5 -5 l-2.5 -2.5 v-5 z" 
+          fill="#ffffff" transform="translate(-11, 112) scale(1.5)"/>
+    
+    <!-- Black knight in top right -->
+    <path d="M25 25 l2.5 7.5 h5 l2.5 -7.5 l2.5 2.5 v5 l-2.5 2.5 l5 5 l-2.5 5 l-7.5 -2.5 l-7.5 2.5 l-2.5 -5 l5 -5 l-2.5 -2.5 v-5 z" 
+          fill="#000000" transform="translate(123, -20) scale(1.5)"/>
+  </g>
+
+  <!-- Arrow - centered vertically -->
+  <path d="M270 150 L330 150 L310 130 M330 150 L310 170" 
+        stroke="#000000" 
+        stroke-width="2" 
+        fill="none"/>
+
+  <!-- Second Board -->
+  <g transform="translate(350, 50)">
+    <!-- Board squares -->
+    <rect width="200" height="200" fill="#1a365d"/>
+    <g id="squares2">
+      <rect x="0" y="0" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="133.3" y="0" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="66.7" y="66.7" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="0" y="133.3" width="66.7" height="66.7" fill="#7fb7d1"/>
+      <rect x="133.3" y="133.3" width="66.7" height="66.7" fill="#7fb7d1"/>
+    </g>
+    
+    <!-- Knights (switched colors, same positions) -->
+    <!-- Black knight in bottom left -->
+    <path d="M25 25 l2.5 7.5 h5 l2.5 -7.5 l2.5 2.5 v5 l-2.5 2.5 l5 5 l-2.5 5 l-7.5 -2.5 l-7.5 2.5 l-2.5 -5 l5 -5 l-2.5 -2.5 v-5 z" 
+          fill="#000000" transform="translate(-11, 112) scale(1.5)"/>
+    
+    <!-- White knight in top right -->
+    <path d="M25 25 l2.5 7.5 h5 l2.5 -7.5 l2.5 2.5 v5 l-2.5 2.5 l5 5 l-2.5 5 l-7.5 -2.5 l-7.5 2.5 l-2.5 -5 l5 -5 l-2.5 -2.5 v-5 z" 
+          fill="#ffffff" transform="translate(123, -20) scale(1.5)"/>
+  </g>
+</svg>

@@ -23,9 +23,13 @@ export default function Question6({data, setData}: QuestionProps) {
         <Box padding={"50px"}>
             <QuestionText>
                 <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
-                    Confronted with two enchanting chessboards, each adorned with 6 gallant knights, you are tasked with a challenge. 
+                    Kronos sealed time within sacred stone disks. To restore balance, move all disks to a single pillar—without placing a larger disk on a smaller one.
+                    {<br />}
+                    Find the minimum moves needed to complete the trial.
                     {<br />} {<br />}
-                    Calculate the minimum number of moves required to transform the initial configuration on the left-side chessboard into the final arrangement on the right-side.
+                    1st pile: 1,2,3,4 {<br />} 2nd pile: empty {<br />} 3rd pile: 5, 6, 7
+                    {<br />} {<br />}
+                    Min moves: same as min moves for 1, 2, 3
                 </Text>
             </QuestionText>
 
@@ -35,7 +39,7 @@ export default function Question6({data, setData}: QuestionProps) {
                 </InputForm>
             </QuestionOutput>
         </Box>
-        <Image src="/q6_k.svg" style={{objectFit: "cover", alignSelf: "baseline", width: "35vw"}} />
+        <Image src="/q6_k.svg" style={{objectFit: "cover", alignSelf: "baseline", width: "45vw"}} />
     </HStack>
     )
 };

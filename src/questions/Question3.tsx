@@ -22,13 +22,13 @@ export default function Question3({ setData, data }: QuestionProps) {
         <Box>
             <QuestionText >
                 <Code textAlign={"left"} fontSize="xl" bg={Colors.codeBackground}>
-                 15 {"=>"} 🔮 <br /> <br /> 
-                if 🔮 mod 3 <br /> 
-                <Text ml="20px"> cout {"<< hack"} <br />  </Text>
-                if 🔮 mod 5 <br />
-                <Text ml="20px"> cout {"<< hackillinois"} <br />  </Text>
-                if 🔮 mod 3 and 🔮 mod 5 <br /> 
-                <Text ml="20px"> cout {"<< illinois"} <br />  </Text>                        
+                int 🔱 = 21; <br /> <br /> 
+                if (🔱 % 2 == 0) <br /> 
+                <Text ml="20px"> cout {"<< olympus"} <br />  </Text>
+                if (🔱 % 7 == 0) <br />
+                <Text ml="20px"> cout {"<< zeus"} <br />  </Text>
+                if (🔱 % 2 == 0 && 🔱 % 7 == 0) <br /> 
+                <Text ml="20px"> cout {"<< thunder"} <br />  </Text>                        
                 </Code>
             </QuestionText>
 
