@@ -47,28 +47,28 @@ export default function Question1({data, setData}: QuestionProps) {
                 <Grid templateColumns='repeat(5, 1fr)' templateRows="repeat(4, 1fr)" width={"min-content"} margin={"auto"}>
                     
                     <Letter char={"M"} state={State.GRAY}/>
-                    <Letter char={"A"} state={State.GRAY}/>
-                    <Letter char={"G"} state={State.GRAY}/>
-                    <Letter char={"I"} state={State.GRAY}/>
-                    <Letter char={"C"} state={State.GRAY}/>
-
-                    
-                    <Letter char={"F"} state={State.GRAY}/>
-                    <Letter char={"L"} state={State.GRAY}/>
-                    <Letter char={"O"} state={State.GRAY}/>
-                    <Letter char={"W"} state={State.GRAY}/>
-                    <Letter char={"N"} state={State.GRAY}/>
-
-                    <Letter char={"R"} state={State.GRAY}/>
-                    <Letter char={"E"} state={State.YELLOW}/>
-                    <Letter char={"E"} state={State.GRAY}/>
-                    <Letter char={"K"} state={State.GRAY}/>
+                    <Letter char={"Y"} state={State.GRAY}/>
+                    <Letter char={"T"} state={State.YELLOW}/>
+                    <Letter char={"H"} state={State.GRAY}/>
                     <Letter char={"S"} state={State.GREEN}/>
 
-                    <Letter char={"B"} state={State.GREEN}/>
+
+                    <Letter char={"G"} state={State.GRAY}/>
+                    <Letter char={"O"} state={State.GRAY}/>
+                    <Letter char={"D"} state={State.GRAY}/>
+                    <Letter char={"L"} state={State.YELLOW}/>
+                    <Letter char={"Y"} state={State.GRAY}/>
+
+                    <Letter char={"A"} state={State.GREEN}/>
+                    <Letter char={"P"} state={State.GRAY}/>
+                    <Letter char={"P"} state={State.GRAY}/>
                     <Letter char={"L"} state={State.GRAY}/>
-                    <Letter char={"U"} state={State.GRAY}/>
-                    <Letter char={"E"} state={State.GREEN}/>
+                    <Letter char={"E"} state={State.GRAY}/>
+
+                    <Letter char={"T"} state={State.YELLOW}/>
+                    <Letter char={"A"} state={State.YELLOW}/>
+                    <Letter char={"L"} state={State.GREEN}/>
+                    <Letter char={"E"} state={State.GRAY}/>
                     <Letter char={"S"} state={State.GREEN}/>
 
                     <Letter char={"?"} state={State.GRAY}/>
