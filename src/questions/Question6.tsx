@@ -22,14 +22,10 @@ export default function Question6({data, setData}: QuestionProps) {
         <HStack>
         <Box padding={"50px"}>
             <QuestionText>
-                <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
+                <Text fontSize="2xl" alignSelf={"baseline"} textAlign={"center"}>
                     Kronos sealed time within sacred stone disks. To restore balance, move all disks to a single pillar—without placing a larger disk on a smaller one.
                     {<br />}
-                    Find the minimum moves needed to complete the trial.
-                    {<br />} {<br />}
-                    1st pile: 1,2,3,4 {<br />} 2nd pile: empty {<br />} 3rd pile: 5, 6, 7
-                    {<br />} {<br />}
-                    Min moves: same as min moves for 1, 2, 3
+                    Find the minimum moves needed to pass the trial.
                 </Text>
             </QuestionText>
 

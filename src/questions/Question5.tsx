@@ -22,7 +22,7 @@ export default function Question6({data, setData}: QuestionProps) {
         <HStack>
         <Box padding={"50px"}>
             <QuestionText>
-                <Text fontSize="xl" alignSelf={"baseline"} textAlign={"left"}>
+                <Text fontSize="2xl" alignSelf={"baseline"} textAlign={"center"}>
                     The goddess Athena challenges you to a test of strategy.
                     {<br />} {<br />}
                     On the Marble Board of Olympus, guide the sacred pieces (which move like a horses in chess) from the starting board to the final board in the fewest moves possible.
