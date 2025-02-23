@@ -29,7 +29,7 @@ export default function Home() {
                                     position: 'relative',
                                     zIndex: '1',
                                 }}>
-                                    Runes and Riddles
+                                    Vault of Athena
                                 </span>
                             </span>
 

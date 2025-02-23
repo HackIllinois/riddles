@@ -6,10 +6,12 @@ export const Config = {
 
 export const Colors = {
     // background: "#89BEAA",
-    background: "#0d3f41",
+    //background: "#0d3f41",
+    background: "#3C777C",
     primaryTextColor: "#ffffff",
     selectColor: "#ebd2d2",
     wordleGray: "#4A5568",
+    //#4A5568
     wordleGreen: "#76b32b",
     wordleYellow: "#ffc23e",
     codeBackground: "#A0AEC0"

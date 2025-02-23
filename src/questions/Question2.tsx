@@ -34,7 +34,7 @@ export default function Question3({ setData, data }: QuestionProps) {
 
             <QuestionOutput qid="3" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <Input id="0" placeholder='Figure it out...' size='lg' _placeholder={{ color: "white" }} />
+                    <Input id="2" placeholder='Figure it out...' size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>

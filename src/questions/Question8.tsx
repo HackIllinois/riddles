@@ -44,7 +44,7 @@ export default function Question0( {setData, data}: QuestionProps ) {
 
             <QuestionOutput qid="8" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <Input id ="0" placeholder='Answer here...' size='lg' _placeholder={{ color: "white" }} />
+                    <Input id ="8" placeholder='Answer here...' size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>
