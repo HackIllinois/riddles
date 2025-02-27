@@ -7,7 +7,7 @@ import { QuestionProps } from "../routes/Questions";
 import { Colors } from "../config";
 
 function getSubmission (answers: Map<string, string>): string {
-    return answers.get("wordle") ?? "NONE";
+    return answers.get("1") ?? "NONE";
 }
 
 enum State {

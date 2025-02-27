@@ -7,7 +7,7 @@ import { QuestionProps } from "../routes/Questions";
 import { Colors } from "../config";
 
 function getSubmission (answers: Map<string, string>): string {
-    return answers.get("0") ?? "NONE";
+    return answers.get("7") ?? "NONE";
 }
 
 export default function Question0( {setData, data}: QuestionProps ) {

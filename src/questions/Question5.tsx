@@ -6,7 +6,7 @@ import InputForm from "../components/InputForm";
 import { useState } from "react";
 
 function getSubmission(answers: Map<string, string>): string {
-    return answers.get("ans") ?? "NONE";
+    return answers.get("5") ?? "NONE";
 }
 
 export default function Question6({data, setData}: QuestionProps) {
@@ -31,7 +31,7 @@ export default function Question6({data, setData}: QuestionProps) {
 
             <QuestionOutput qid="5" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <Input id="ans" placeholder="Answer here..." size='lg' _placeholder={{ color: "white" }} />
+                    <Input id="5" placeholder="Answer here..." size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>

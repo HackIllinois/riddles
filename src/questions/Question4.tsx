@@ -7,7 +7,7 @@ import { QuestionProps } from "../routes/Questions";
 import { Colors } from "../config";
 
 function getSubmission (answers: Map<string, string>): string {
-    return answers.get("0") ?? "NONE";
+    return answers.get("4") ?? "NONE";
 }
 
 export default function Question0( {setData, data}: QuestionProps ) {
@@ -21,7 +21,7 @@ export default function Question0( {setData, data}: QuestionProps ) {
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="4xl" color={Colors.primaryTextColor}> The Oracle inscribes a four-digit palindrome on a stone tablet. What is the probability that the chosen number is a multiple of 18? </Text>
+                <Text fontSize="4xl" color={Colors.primaryTextColor}> The Oracle inscribes a four-digit palindrome on a stone tablet. What is the probability that the chosen number is a multiple of 18? Answer in the format (0.??)</Text>
             </QuestionText>
 
             <QuestionOutput qid="4" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>

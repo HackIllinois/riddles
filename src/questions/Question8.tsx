@@ -7,7 +7,7 @@ import { QuestionProps } from "../routes/Questions";
 import { Colors } from "../config";
 
 function getSubmission (answers: Map<string, string>): string {
-    return answers.get("0") ?? "NONE";
+    return answers.get("8") ?? "NONE";
 }
 
 export default function Question0( {setData, data}: QuestionProps ) {
@@ -22,9 +22,9 @@ export default function Question0( {setData, data}: QuestionProps ) {
         <Box>
             <QuestionText>
                 <Text fontSize="2xl" alignSelf={"baseline"} textAlign={"left"} ml={40}>
-                    Six travelers— Hermes (1 min), Perseus (3 min), Athena (8 min), Heracles (12 min), Zeus (15 min),
+                    Six travelers— Hermes (1 min), Perseus (3 min), Athena (8 min), Heracles (12 min), Zeus (13 min),
                     {<br />}
-                    and Atlas (20 min) —must cross a crumbling bridge with a shared torch.
+                    —must cross a crumbling bridge with a shared torch.
                     {<br />} {<br />}
                 </Text>
                 <Text fontSize="2xl">

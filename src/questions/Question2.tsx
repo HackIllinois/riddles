@@ -7,7 +7,7 @@ import InputForm from "../components/InputForm";
 import { Colors } from "../config";
 
 function getSubmission(answers: Map<string, string>): string {
-    return answers.get("0")?.toLowerCase() ?? "NONE";
+    return answers.get("2")?.toLowerCase() ?? "NONE";
 }
 
 export default function Question3({ setData, data }: QuestionProps) {
@@ -32,7 +32,7 @@ export default function Question3({ setData, data }: QuestionProps) {
                 </Code>
             </QuestionText>
 
-            <QuestionOutput qid="3" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
+            <QuestionOutput qid="2" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
                     <Input id="2" placeholder='Figure it out...' size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
