@@ -21,7 +21,7 @@ export default function Question0( {setData, data}: QuestionProps ) {
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="4xl" color={Colors.primaryTextColor}> What is HackIllinois 2025 motto (all lowercase)? </Text>
+                <Text fontSize="4xl" color={Colors.primaryTextColor}> What is HackIllinois 2025 motto (case insensitive)? </Text>
             </QuestionText>
 
             <QuestionOutput qid="0" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>

@@ -81,7 +81,7 @@ export default function Question1({data, setData}: QuestionProps) {
 
             <QuestionOutput qid="1" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
                 <InputForm handleAnswerChange={handleAnswerChange} >
-                    <Input id ="wordle" placeholder="Answer here..." size='lg' _placeholder={{ color: "white" }} />
+                    <Input id ="1" placeholder="Answer here..." size='lg' _placeholder={{ color: "white" }} />
                 </InputForm>
             </QuestionOutput>
         </Box>
