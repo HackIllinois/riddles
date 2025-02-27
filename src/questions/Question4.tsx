@@ -21,7 +21,7 @@ export default function Question0( {setData, data}: QuestionProps ) {
     return (
         <Box>
             <QuestionText>
-                <Text fontSize="4xl" color={Colors.primaryTextColor}> The Oracle inscribes a four-digit palindrome on a stone tablet. What is the probability that the chosen number is a multiple of 18? Answer in the format (0.??)</Text>
+                <Text fontSize="4xl" color={Colors.primaryTextColor}> The Oracle inscribes a four-digit palindrome on a stone tablet. What is the probability that the chosen number is a multiple of 18? Express your answer as a simplified fraction in the format (?/??)</Text>
             </QuestionText>
 
             <QuestionOutput qid="4" answers={answers} getSubmission={getSubmission} setData={setData} data={data}>
