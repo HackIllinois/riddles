@@ -35,9 +35,14 @@ export interface PuzzleData {
 }
 
 
-function createTab(idx: number, complete: boolean) {
+function createTab(idx: number, complete: boolean, problemComplete: boolean[]) {
     const src = complete ? "complete.svg" : `q${idx}.svg`;
-    return <Tab> <Image draggable="false" minH={"100%"} src={`/${src}`} /> </Tab>;
+    const isDisabled = idx !== 0 && !problemComplete[idx - 1];
+    return (
+        <Tab isDisabled={isDisabled}>
+            <Image draggable="false" minH={"100%"} src={`/${src}`} />
+        </Tab>
+    );
 }
 
 
@@ -89,7 +94,7 @@ export default function Questions() {
             <ModalWrapper isOpen={isOpen} onClose={onClose}/> 
             <Tabs isFitted variant='soft-rounded'>
                 <TabList marginBottom="2%">
-                    {problems.map(idx => createTab(idx, data?.problemComplete?.[idx] || false))}
+                    {problems.map(idx => createTab(idx, data?.problemComplete?.[idx] || false, data?.problemComplete || []))}
                 </TabList>
 
                 <TabPanels fontFamily={"Montserrat"} fontWeight={600}>
