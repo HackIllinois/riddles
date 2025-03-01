@@ -46,11 +46,10 @@ export default function TeamNameModal({ isOpen, onClose }: TeamNameModalProps) {
 
   return (
     <>
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Welcome! What is your team name?</ModalHeader>
-          <ModalCloseButton />
           <ModalBody>
             <FormControl isInvalid={isError}>
 

@@ -17,7 +17,7 @@ export default function Home() {
                             fontSize={"7xl"}
                             fontWeight={"800"}
                         >
-                            Welcome to{' '}
+                            Welcome to the{' '}
 
                             <span style={{
                                 position: 'relative',
