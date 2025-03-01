@@ -4,7 +4,6 @@ import QuestionOutput from "../components/QuestionOutput";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
 import { QuestionProps } from "../routes/Questions";
-import { Colors } from "../config";
 
 function getSubmission (answers: Map<string, string>): string {
     return answers.get("8") ?? "NONE";
@@ -49,4 +48,4 @@ export default function Question0( {setData, data}: QuestionProps ) {
             </QuestionOutput>
         </Box>
     )
-};
+}

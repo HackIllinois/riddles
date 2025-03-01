@@ -39,4 +39,4 @@ export default function Question3({ setData, data }: QuestionProps) {
             </QuestionOutput>
         </Box>
     )
-};
+}

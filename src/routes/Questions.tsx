@@ -57,10 +57,6 @@ export default function Questions() {
     const [data, setData] = useState({} as PuzzleData);
     const jwt = localStorage.getItem("jwt");
 
-    if (!jwt) {
-        return <Navigate to="/auth/" />
-    }
-
     // FINISHED PUZZLE
     if (data && data.score == 9) {
         // alert("You are finished!");
@@ -87,8 +83,12 @@ export default function Questions() {
                     return null;
                 }
             });
-        }, []);
+        }, [jwt, onOpen]);
     
+    if (!jwt) {
+        return <Navigate to="/auth/" />
+    }
+
     return (
         <PageContents>
             <ModalWrapper isOpen={isOpen} onClose={onClose}/> 

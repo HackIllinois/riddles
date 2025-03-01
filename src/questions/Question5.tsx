@@ -38,4 +38,4 @@ export default function Question6({data, setData}: QuestionProps) {
         <Image src="/q5_k.svg" style={{objectFit: "cover", alignSelf: "baseline", width: "45vw"}} />
     </HStack>
     )
-};
+}

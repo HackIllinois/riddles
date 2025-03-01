@@ -23,4 +23,4 @@ export default function CustomSelect ({ value, onChange, options, disabledValues
             )).filter((option) => option)}
         </Select>
     );
-};
+}
