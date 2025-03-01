@@ -1,4 +1,4 @@
-import { Button, FormControl, ModalOverlay, ModalContent, Modal, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Input } from "@chakra-ui/react"
+import { Button, FormControl, ModalOverlay, ModalContent, Modal, ModalHeader, ModalBody, ModalFooter, Input } from "@chakra-ui/react"
 import axios from "axios";
 import { ChangeEvent, useState } from "react";
 import { Config } from "../config";
